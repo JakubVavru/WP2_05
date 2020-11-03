@@ -1,11 +1,13 @@
 <?php
 $i ;
-$runner[0] = "Martin Kokeš";
-$runner[1] = "Jakub Vávrů";
-$runner[2] = "Štěpán Kolarovský";
-$runner[3] = "Jan Šlechta";
-$runner[4] = "Michal Plaček";
-$runner[5] = "Martin Lédl";
+$runner = array (
+"Martin Kokeš",
+"Jakub Vávrů",
+"Štěpán Kolarovský",
+"Jan Šlechta",
+"Michal Plaček",
+"Martin Lédl",
+)
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +18,7 @@ $runner[5] = "Martin Lédl";
 </head>
 <body>
     <?php
-    for ($i=0; $i < 5 ; $i++) {  ?>
+    for ($i=0; $i < count($runner) ; $i++) {  ?>
         Místo <?= $i + 1 ?>. <?= $runner[$i] ?> <br>
         <?php
     }
